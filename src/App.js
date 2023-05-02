@@ -1,16 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React from "react";
+import {Routes, Route, BrowserRouter}from "react-router-dom"
+import Home from "./Page/Home";
+import Setting from "./Page/Setting";
+import About from "./Page/About";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello 
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/Setting" exact element={<Setting />} />
+        <Route path="/About" exact element={<About />} />
+      </Routes>
+     
+    </BrowserRouter>
+  
   );
 }
-
 export default App;
