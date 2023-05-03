@@ -35,15 +35,15 @@ function ResponsiveDrawer(props) {
             <h3>BaoDatSop</h3>
             <Divider />
             <List>
-             
-                <ListItem disablePadding  onClick={()=>{navigate("/")}}>
-                        <ListItemButton>
-                            <ListItemIcon>
+
+                <ListItem disablePadding onClick={() => { navigate("/") }}>
+                    <ListItemButton>
+                        <ListItemIcon>
                             { }
-                            <InboxIcon/>
-                            </ListItemIcon>
-                            <ListItemText primary="Home" />
-                        </ListItemButton>
+                            <InboxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Home" />
+                    </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding onClick={() => { navigate("/About") }}>
                     <ListItemButton>
@@ -61,6 +61,24 @@ function ResponsiveDrawer(props) {
                             <InboxIcon />
                         </ListItemIcon>
                         <ListItemText primary="Setting" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding onClick={() => { navigate("/ProductType") }}>
+                    <ListItemButton>
+                        <ListItemIcon>
+                            { }
+                            <InboxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="ProductType" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding onClick={() => { navigate("/Product") }}>
+                    <ListItemButton>
+                        <ListItemIcon>
+                            { }
+                            <InboxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Product" />
                     </ListItemButton>
                 </ListItem>
             </List>
@@ -104,7 +122,7 @@ function ResponsiveDrawer(props) {
                     {drawer}
                 </Drawer>
             </Box>
-           
+
         </Box>
     );
 }

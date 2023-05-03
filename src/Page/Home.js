@@ -1,18 +1,15 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import SideNav from "../Components/SideNav"
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Navbar from "../Components/Navbar"
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import "../Assets/Dash.css"
 import Accordion from "../Components/Accordion"
+import CountUp from 'react-countup';
 export default function Home() {
     return (
         <>
@@ -28,7 +25,7 @@ export default function Home() {
                                         <Card sx={{ minWidth: 49 + '%', height: 150 }} className='grandient'>
                                             <CardContent>
                                                 <Typography gutterBottom variant="h5" component="div" sx={{ color: "#ffffff" }}>
-                                                    $50 000
+                                                    $<CountUp delay={0.4} end={60000} duration={0.6} />
                                                 </Typography>
                                                 <Typography gutterBottom variant="body2" component="div" sx={{ color: "#ccd1c1" }}>
                                                     Total
@@ -38,7 +35,7 @@ export default function Home() {
                                         <Card sx={{ minWidth: 49 + '%', height: 150 }} className='grandientlight'>
                                             <CardContent>
                                                 <Typography gutterBottom variant="h5" component="div" sx={{ color: "#ffffff" }}>
-                                                    $50 000
+                                                    $<CountUp delay={0.4} end={50000}duration={0.6} />
                                                 </Typography>
                                                 <Typography gutterBottom variant="body2" component="div" sx={{ color: "#ccd1c1" }}>
                                                     Total
@@ -73,7 +70,7 @@ export default function Home() {
                                 <Grid item xs={8}>
                                     <Card sx={{ height: 60 + 'vh' }}>
                                         <CardContent>
-
+                                         
                                         </CardContent>
                                     </Card>
                                 </Grid>
