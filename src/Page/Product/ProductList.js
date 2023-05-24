@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import SideNav from "../../Components/SideNav"
 import Typography from '@mui/material/Typography';
-import ProductTypeCRUD from "../../Product/ProductTypeCRUD"
-import ProductCRUD from '../../Product/ProductCRUD';
+import ProductCRUD from '../../Components/Product/ProductCRUD';
 export default function ProductList() {
     return (
         <div className="bgrcolor">
@@ -18,7 +17,7 @@ export default function ProductList() {
                 >
                     <Toolbar />
                     <Typography paragraph>
-                       <ProductCRUD/>
+                        <ProductCRUD />
                     </Typography>
                 </Box>
             </Box>

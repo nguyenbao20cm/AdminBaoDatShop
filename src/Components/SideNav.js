@@ -30,11 +30,11 @@ function ResponsiveDrawer(props) {
     };
 
     const drawer = (
-        <div>
+        <div >
             <Toolbar />
             <h3>BaoDatSop</h3>
             <Divider />
-            <List>
+            <List >
 
                 <ListItem disablePadding onClick={() => { navigate("/") }}>
                     <ListItemButton>
@@ -79,6 +79,15 @@ function ResponsiveDrawer(props) {
                             <InboxIcon />
                         </ListItemIcon>
                         <ListItemText primary="Product" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding onClick={() => { navigate("/Invoice") }}>
+                    <ListItemButton>
+                        <ListItemIcon>
+                            { }
+                            <InboxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Invoice" />
                     </ListItemButton>
                 </ListItem>
             </List>

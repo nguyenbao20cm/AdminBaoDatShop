@@ -79,7 +79,11 @@ export default function Navbar() {
         setAnchorEl(null);
         handleMobileMenuClose();
     };
-
+    const handleSignOut = () => {
+        localStorage.clear()
+        window.location.reload(false);
+    };
+    
     const handleMobileMenuOpen = (event) => {
         setMobileMoreAnchorEl(event.currentTarget);
     };
@@ -103,6 +107,7 @@ export default function Navbar() {
         >
             <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
             <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+            <MenuItem onClick={handleSignOut}>Đăng xuất</MenuItem>
         </Menu>
     );
 
@@ -177,7 +182,7 @@ export default function Navbar() {
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
-                        BaoDatShop
+                       
                     </Typography>
                     <Search>
                         <SearchIconWrapper>

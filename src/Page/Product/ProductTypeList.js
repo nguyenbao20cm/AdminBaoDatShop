@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import SideNav from "../../Components/SideNav"
 import Typography from '@mui/material/Typography';
-import ProductTypeCRUD from "../../Product/ProductTypeCRUD"
+import ProductTypeCRUD from "../../Components/Product/ProductTypeCRUD"
 export default function ProductTypeList() {
     return (
         <div className="bgrcolor">
